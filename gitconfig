@@ -1,0 +1,30 @@
+[user]
+	name = Paramesh Siddesha
+
+[color]
+	diff = auto
+	branch = auto
+	status = auto
+	interactive = auto
+	ui = true
+
+[alias]
+    ci = commit -a
+    co = checkout
+    st = status
+[core]
+	excludesfile = /Users/paramesh/.gitignore_global
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = current
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+[diff]
+	renames = true
